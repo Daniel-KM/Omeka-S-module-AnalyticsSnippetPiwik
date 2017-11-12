@@ -13,7 +13,7 @@ Installation
 
 Install [Analytics Snippet] first.
 
-Then, uncompress files and rename module folder "AnalyticsSnippetPiwik". Then
+Then, uncompress files and rename module folder `AnalyticsSnippetPiwik`. Then
 install it like any other Omeka module and follow the config instructions.
 
 See general end user documentation for [Installing a module].
@@ -80,6 +80,7 @@ Copyright
 
 [Analytics Snippet Piwik]: https://github.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
 [Analytics Snippet]: https://github.com/Daniel-KM/Omeka-S-module-AnalyticsSnippet
+[OAI-PMH Repository]: https://github.com/biblibre/omeka-s-module-OaiPmhRepository
 [Omeka S]: https://omeka.org/s
 [Installing a module]: http://dev.omeka.org/docs/s/user-manual/modules/#installing-modules
 [module issues]: https://github.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik/issues
