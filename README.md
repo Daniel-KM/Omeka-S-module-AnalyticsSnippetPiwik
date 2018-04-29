@@ -1,7 +1,7 @@
-Analytics Snippet Piwik (module for Omeka S)
-============================================
+Analytics Snippet Piwik / Matomo (module for Omeka S)
+=====================================================
 
-[Analytics Snippet Piwik] is a sub-module of [Analytics Snippet] for [Omeka S]
+[Analytics Snippet Piwik] / Matomo is a sub-module of [Analytics Snippet] for [Omeka S]
 that allows to track the not only the public and/or admin pages, but json (in
 particular for the Omeka S Api) and XML.
 
