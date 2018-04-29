@@ -13,7 +13,7 @@ return [
         ],
     ],
     'analyticssnippetpiwik' => [
-        'settings' => [
+        'config' => [
             'analyticssnippetpiwik_tracker_url' => '',
             'analyticssnippetpiwik_site_id' => '',
             'analyticssnippetpiwik_token_auth' => '',

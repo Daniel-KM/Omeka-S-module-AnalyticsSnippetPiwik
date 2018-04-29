@@ -8,8 +8,6 @@ class ConfigForm extends Form
 {
     public function init()
     {
-        $this->setAttribute('id', 'config-form');
-
         $this->add([
             'name' => 'analyticssnippetpiwik_tracker_url',
             'type' => Text::class,
