@@ -63,6 +63,11 @@ conditions as regards security.
 The fact that you are presently reading this means that you have had knowledge
 of the CeCILL license and that you accept its terms.
 
+### Libraries
+
+The module uses the library [matomo-php-tracker], released under the [BSD]
+license.
+
 
 Contact
 -------
@@ -88,4 +93,6 @@ Copyright
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html
 [FSF]: https://www.fsf.org
 [OSI]: http://opensource.org
+[matomo-php-tracker]: https://github.com/matomo-org/matomo-php-tracker
+[BSD]: http://www.opensource.org/licenses/bsd-license.php
 [Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
