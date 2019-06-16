@@ -1,5 +1,5 @@
 {
-    "name": "daniel-km/Omeka-S-module-AnalyticsSnippetPiwik",
+    "name": "daniel-km/omeka-s-module-analytics-snippet-piwik",
     "description": "Omeka S submodule for Analytics Snippet to track json (in particular Omeka S API) and xml (like with OAI-PMH Repository) calls with Piwik/Matomo.",
     "license": " CECILL-2.1",
     "require": {
