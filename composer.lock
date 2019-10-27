@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abfcd619b8e58a6c74ebeeb45791df02",
+    "content-hash": "bdabfda4de4debe56da4fe656c6485a8",
     "packages": [
         {
             "name": "piwik/piwik-php-tracker",
