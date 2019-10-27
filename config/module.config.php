@@ -4,7 +4,7 @@ namespace AnalyticsSnippetPiwik;
 return [
     'form_elements' => [
         'invokables' => [
-            Form\ConfigForm::class => Form\ConfigForm::class,
+            Form\SettingsFieldset::class => Form\SettingsFieldset::class,
         ],
     ],
     'analyticssnippet' => [
@@ -13,7 +13,7 @@ return [
         ],
     ],
     'analyticssnippetpiwik' => [
-        'config' => [
+        'settings' => [
             'analyticssnippetpiwik_tracker_url' => '',
             'analyticssnippetpiwik_site_id' => '',
             'analyticssnippetpiwik_token_auth' => '',
