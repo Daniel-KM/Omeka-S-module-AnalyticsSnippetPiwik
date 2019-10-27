@@ -21,11 +21,12 @@ class Piwik extends AbstractTracker
 
         $piwikTracker = new PiwikTracker($siteId, $trackerUrl);
 
-        $piwikTracker->setUrl($url);
-        $piwikTracker->setUrlReferrer($this->getUrlReferrer());
-        $piwikTracker->setIp($this->getClientIp());
-        $piwikTracker->setUserAgent($this->getUserAgent());
-        $piwikTracker->setCustomTrackingParameter('user_id', $this->getUserId());
+        $piwikTracker
+            ->setUrl($url)
+            ->setUrlReferrer($this->getUrlReferrer())
+            ->setIp($this->getClientIp())
+            ->setUserAgent($this->getUserAgent())
+            ->setCustomTrackingParameter('user_id', $this->getUserId());
 
         // Specify an API token with at least Admin permission, so the Visitor
         // IP address can be recorded
