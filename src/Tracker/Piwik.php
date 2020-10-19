@@ -3,7 +3,7 @@ namespace AnalyticsSnippetPiwik\Tracker;
 
 use AnalyticsSnippet\Tracker\AbstractTracker;
 use PiwikTracker;
-use Zend\EventManager\Event;
+use Laminas\EventManager\Event;
 
 class Piwik extends AbstractTracker
 {
