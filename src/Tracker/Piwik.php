@@ -1,16 +1,16 @@
-<?php
+<?php declare(strict_types=1);
 namespace AnalyticsSnippetPiwik\Tracker;
 
 use AnalyticsSnippet\Tracker\AbstractTracker;
-use PiwikTracker;
 use Laminas\EventManager\Event;
+use PiwikTracker;
 
 class Piwik extends AbstractTracker
 {
     /**
      * @link https://piwik.org/docs/tracking-api
      */
-    protected function trackNotInlineScript($url, $type, Event $event)
+    protected function trackNotInlineScript($url, $type, Event $event): void
     {
         $settings = $this->services->get('Omeka\Settings');
         $siteId = $settings->get('analyticssnippetpiwik_site_id');
@@ -58,7 +58,7 @@ class Piwik extends AbstractTracker
         // $piwikTracker->doTrackGoal($idGoal = 1, $revenue = 42);
     }
 
-    protected function trackError($url, $type, Event $event)
+    protected function trackError($url, $type, Event $event): void
     {
         $this->trackNotInlineScript($url, 'error', $event);
     }

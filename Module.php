@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 namespace AnalyticsSnippetPiwik;
 
 if (!class_exists(\Generic\AbstractModule::class)) {
@@ -24,12 +24,12 @@ class Module extends AbstractModule
 {
     const NAMESPACE = __NAMESPACE__;
 
-    public function init(ModuleManager $moduleManager)
+    public function init(ModuleManager $moduleManager): void
     {
         require_once __DIR__ . '/vendor/autoload.php';
     }
 
-    public function attachListeners(SharedEventManagerInterface $sharedEventManager)
+    public function attachListeners(SharedEventManagerInterface $sharedEventManager): void
     {
         $sharedEventManager->attach(
             \Omeka\Form\SettingForm::class,

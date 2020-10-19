@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 namespace AnalyticsSnippetPiwik\Form;
 
 use Laminas\Form\Element;
@@ -8,7 +8,7 @@ class SettingsFieldset extends Fieldset
 {
     protected $label = 'Analytics Snippet Matomo (Piwik)'; // @translate
 
-    public function init()
+    public function init(): void
     {
         $this
             ->add([
