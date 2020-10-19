@@ -9,7 +9,7 @@ return [
     ],
     'analyticssnippet' => [
         'trackers' => [
-            'default' => Tracker\Piwik::class,
+            'default' => Tracker\Matomo::class,
         ],
     ],
     'analyticssnippetpiwik' => [

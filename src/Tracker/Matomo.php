@@ -3,12 +3,12 @@ namespace AnalyticsSnippetPiwik\Tracker;
 
 use AnalyticsSnippet\Tracker\AbstractTracker;
 use Laminas\EventManager\Event;
-use PiwikTracker;
+use MatomoTracker;
 
-class Piwik extends AbstractTracker
+class Matomo extends AbstractTracker
 {
     /**
-     * @link https://piwik.org/docs/tracking-api
+     * @link https://matomo.org/docs/tracking-api
      */
     protected function trackNotInlineScript($url, $type, Event $event): void
     {
@@ -19,9 +19,9 @@ class Piwik extends AbstractTracker
             return;
         }
 
-        $piwikTracker = new PiwikTracker($siteId, $trackerUrl);
+        $matomoTracker = new MatomoTracker($siteId, $trackerUrl);
 
-        $piwikTracker
+        $matomoTracker
             ->setUrl($url)
             ->setUrlReferrer($this->getUrlReferrer())
             ->setIp($this->getClientIp())
@@ -30,32 +30,32 @@ class Piwik extends AbstractTracker
 
         // Specify an API token with at least Admin permission, so the Visitor
         // IP address can be recorded
-        // Learn more about token_auth: https://piwik.org/faq/general/faq_114/
+        // Learn more about token_auth: https://matomo.org/faq/general/faq_114/
         $tokenAuth = $settings->get('analyticssnippetpiwik_token_auth');
         if ($tokenAuth) {
-            $piwikTracker->setTokenAuth($tokenAuth);
+            $matomoTracker->setTokenAuth($tokenAuth);
         }
 
         // You can manually set the visitor details (resolution, time, plugins,
         // etc.)
-        // See all other ->set* functions available in the PiwikTracker.php file
-        // $piwikTracker->setResolution(1600, 1400);
+        // See all other ->set* functions available in the MatomoTracker.php file
+        // $matomoTracker->setResolution(1600, 1400);
 
         // Sends Tracker request via http
-        $piwikTracker->doTrackPageView($type);
+        $matomoTracker->doTrackPageView($type);
 
         // Tracks an event
-        // $piwikTracker->doTrackEvent($category, $action, $name, $value);
+        // $matomoTracker->doTrackEvent($category, $action, $name, $value);
 
         // Tracks an internal Site Search query, and optionally tracks the
         // Search Category, and Search results Count.
-        // $piwikTracker->doTrackSiteSearch($keyword, $category, $countResults);
+        // $matomoTracker->doTrackSiteSearch($keyword, $category, $countResults);
 
         // Tracks a download or outlink
-        // $piwikTracker->doTrackAction($actionUrl, $actionType);
+        // $matomoTracker->doTrackAction($actionUrl, $actionType);
 
         // You can also track Goal conversions
-        // $piwikTracker->doTrackGoal($idGoal = 1, $revenue = 42);
+        // $matomoTracker->doTrackGoal($idGoal = 1, $revenue = 42);
     }
 
     protected function trackError($url, $type, Event $event): void
