@@ -34,7 +34,7 @@ your archives regularly so you can roll back if needed.
 Troubleshooting
 ---------------
 
-See online issues on the [module issues] page on GitHub.
+See online issues on the [module issues] page on GitLab.
 
 
 License
@@ -77,7 +77,7 @@ Contact
 
 Current maintainers:
 
-* Daniel Berthereau (see [Daniel-KM] on GitHub)
+* Daniel Berthereau (see [Daniel-KM] on GitLab)
 
 
 Copyright
@@ -86,12 +86,12 @@ Copyright
 * Copyright Daniel Berthereau, 2017
 
 
-[Analytics Snippet Piwik]: https://github.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
-[Analytics Snippet]: https://github.com/Daniel-KM/Omeka-S-module-AnalyticsSnippet
+[Analytics Snippet Piwik]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
+[Analytics Snippet]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippet
 [OAI-PMH Repository]: https://github.com/biblibre/omeka-s-module-OaiPmhRepository
 [Omeka S]: https://omeka.org/s
 [Installing a module]: http://dev.omeka.org/docs/s/user-manual/modules/#installing-modules
-[module issues]: https://github.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik/issues
+[module issues]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik/-/issues
 [CeCILL v2.1]: https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html
 [FSF]: https://www.fsf.org
@@ -99,4 +99,4 @@ Copyright
 [matomo-php-tracker]: https://github.com/matomo-org/matomo-php-tracker
 [BSD]: http://www.opensource.org/licenses/bsd-license.php
 [GitLab]: https://gitlab.com/Daniel-KM
-[Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
+[Daniel-KM]: https://gitlab.com/Daniel-KM "Daniel Berthereau"
