@@ -40,7 +40,7 @@ See online issues on the [module issues] page on GitLab.
 License
 -------
 
-This module is published under the [CeCILL v2.1] licence, compatible with
+This module is published under the [CeCILL v2.1] license, compatible with
 [GNU/GPL] and approved by [FSF] and [OSI].
 
 This software is governed by the CeCILL license under French law and abiding by
@@ -72,18 +72,10 @@ The module uses the library [matomo-php-tracker], released under the [BSD]
 license.
 
 
-Contact
--------
-
-Current maintainers:
-
-* Daniel Berthereau (see [Daniel-KM] on GitLab)
-
-
 Copyright
 ---------
 
-* Copyright Daniel Berthereau, 2017
+* Copyright Daniel Berthereau, 2017-2020 (see [Daniel-KM] on GitLab)
 
 
 [Analytics Snippet Piwik]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
