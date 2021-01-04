@@ -2,7 +2,8 @@ Analytics Snippet Piwik / Matomo (module for Omeka S)
 =====================================================
 
 > __New versions of this module and support for Omeka S version 3.0 and above
-> are available on [GitLab], which seems to respect users and privacy better.__
+> are available on [GitLab], which seems to respect users and privacy better
+> than the previous repository.__
 
 [Analytics Snippet Piwik] / Matomo is a sub-module of [Analytics Snippet] for [Omeka S]
 that allows to track the not only the public and/or admin pages, but json (in
@@ -75,7 +76,7 @@ license.
 Copyright
 ---------
 
-* Copyright Daniel Berthereau, 2017-2020 (see [Daniel-KM] on GitLab)
+* Copyright Daniel Berthereau, 2017-2021 (see [Daniel-KM] on GitLab)
 
 
 [Analytics Snippet Piwik]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
