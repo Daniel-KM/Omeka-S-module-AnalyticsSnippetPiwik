@@ -4,25 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89881d372540df9c4f8f32973ff35e9f",
+    "content-hash": "f050399f38da3c9ef39b0188df36e21f",
     "packages": [
         {
             "name": "matomo/matomo-php-tracker",
-            "version": "2.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/matomo-php-tracker.git",
-                "reference": "d8a30200b0bd144f38282df9a8cb5da194da9296"
+                "reference": "441d377411296e04558f88c27706545c9524ac2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/matomo-php-tracker/zipball/d8a30200b0bd144f38282df9a8cb5da194da9296",
-                "reference": "d8a30200b0bd144f38282df9a8cb5da194da9296",
+                "url": "https://api.github.com/repos/matomo-org/matomo-php-tracker/zipball/441d377411296e04558f88c27706545c9524ac2e",
+                "reference": "441d377411296e04558f88c27706545c9524ac2e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
             },
             "suggest": {
                 "ext-curl": "Using this extension to issue the HTTPS request to Matomo"
@@ -35,7 +38,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-2-Clause"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -52,7 +55,7 @@
                 "piwik",
                 "tracker"
             ],
-            "time": "2020-01-14T19:33:53+00:00"
+            "time": "2021-11-15T18:55:52+00:00"
         }
     ],
     "packages-dev": [],
