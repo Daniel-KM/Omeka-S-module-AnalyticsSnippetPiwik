@@ -8,21 +8,21 @@
     "packages": [
         {
             "name": "matomo/matomo-php-tracker",
-            "version": "3.0.4",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/matomo-php-tracker.git",
-                "reference": "441d377411296e04558f88c27706545c9524ac2e"
+                "reference": "544148c29227da6869a0324f3b12b76a54006ccd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/matomo-php-tracker/zipball/441d377411296e04558f88c27706545c9524ac2e",
-                "reference": "441d377411296e04558f88c27706545c9524ac2e",
+                "url": "https://api.github.com/repos/matomo-org/matomo-php-tracker/zipball/544148c29227da6869a0324f3b12b76a54006ccd",
+                "reference": "544148c29227da6869a0324f3b12b76a54006ccd",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "php": ">=5.3"
+                "php": "^7.0 || ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
@@ -55,7 +55,12 @@
                 "piwik",
                 "tracker"
             ],
-            "time": "2021-11-15T18:55:52+00:00"
+            "support": {
+                "forum": "https://forum.matomo.org/",
+                "issues": "https://github.com/matomo-org/matomo-php-tracker/issues",
+                "source": "https://github.com/matomo-org/matomo-php-tracker"
+            },
+            "time": "2022-12-07T08:35:02+00:00"
         }
     ],
     "packages-dev": [],
@@ -66,5 +71,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
