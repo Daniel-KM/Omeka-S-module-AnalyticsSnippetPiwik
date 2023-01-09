@@ -18,7 +18,7 @@ use Laminas\ModuleManager\ModuleManager;
  * Submodule for Analytics Snippet to track json (in particular Omeka S API) and
  * xml (like with OAI-PMH Repository) calls with Piwik.
  *
- * @copyright Daniel Berthereau, 2017-2020
+ * @copyright Daniel Berthereau, 2017-2023
  * @license http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.txt
  */
 class Module extends AbstractModule
