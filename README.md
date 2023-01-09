@@ -83,7 +83,7 @@ Copyright
 [Analytics Snippet]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippet
 [OAI-PMH Repository]: https://github.com/biblibre/omeka-s-module-OaiPmhRepository
 [Omeka S]: https://omeka.org/s
-[Installing a module]: http://dev.omeka.org/docs/s/user-manual/modules/#installing-modules
+[Installing a module]: https://omeka.org/s/docs/user-manual/modules/#installing-modules
 [module issues]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik/-/issues
 [CeCILL v2.1]: https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html
