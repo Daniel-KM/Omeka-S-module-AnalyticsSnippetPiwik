@@ -12,6 +12,7 @@ class SettingsFieldset extends Fieldset
     public function init(): void
     {
         $this
+            ->setAttribute('id', 'analytics-snippet-matomo')
             ->add([
                 'name' => 'analyticssnippetpiwik_tracker_url',
                 'type' => Element\Text::class,
