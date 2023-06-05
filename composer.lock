@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "matomo/matomo-php-tracker",
-            "version": "3.1.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matomo-org/matomo-php-tracker.git",
-                "reference": "544148c29227da6869a0324f3b12b76a54006ccd"
+                "reference": "c9e7816d63ddf99bffb1414cfbe45f4c4edf1d4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matomo-org/matomo-php-tracker/zipball/544148c29227da6869a0324f3b12b76a54006ccd",
-                "reference": "544148c29227da6869a0324f3b12b76a54006ccd",
+                "url": "https://api.github.com/repos/matomo-org/matomo-php-tracker/zipball/c9e7816d63ddf99bffb1414cfbe45f4c4edf1d4b",
+                "reference": "c9e7816d63ddf99bffb1414cfbe45f4c4edf1d4b",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "issues": "https://github.com/matomo-org/matomo-php-tracker/issues",
                 "source": "https://github.com/matomo-org/matomo-php-tracker"
             },
-            "time": "2022-12-07T08:35:02+00:00"
+            "time": "2023-03-24T15:16:22+00:00"
         }
     ],
     "packages-dev": [],
