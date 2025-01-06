@@ -8,6 +8,13 @@ use MatomoTracker;
 
 class Matomo extends AbstractTracker
 {
+    public function track($url, $type, Event $event): void
+    {
+        if ($type !== 'html') {
+            $this->trackNotInlineScript($url, $type, $event);
+        }
+    }
+
     /**
      * @link https://matomo.org/docs/tracking-api
      */
@@ -20,14 +27,19 @@ class Matomo extends AbstractTracker
             return;
         }
 
+        $ip = $this->getClientIp();
+        $userId = $this->getUserId();
+        $referrer = $this->getUrlReferrer();
+        $userAgent = $this->getUserAgent();
+
         $matomoTracker = new MatomoTracker($siteId, $trackerUrl);
 
         $matomoTracker
             ->setUrl($url)
-            ->setUrlReferrer($this->getUrlReferrer())
-            ->setIp($this->getClientIp())
-            ->setUserAgent($this->getUserAgent())
-            ->setCustomTrackingParameter('user_id', $this->getUserId());
+            ->setUrlReferrer($referrer)
+            ->setIp($ip)
+            ->setUserAgent($userAgent)
+            ->setCustomTrackingParameter('user_id', $userId);
 
         // Specify an API token with at least Admin permission, so the Visitor
         // IP address can be recorded
