@@ -1,11 +1,11 @@
-Analytics Snippet Piwik / Matomo (module for Omeka S)
+Analytics Snippet Matomo (Piwik) (module for Omeka S)
 =====================================================
 
 > __New versions of this module and support for Omeka S version 3.0 and above
 > are available on [GitLab], which seems to respect users and privacy better
 > than the previous repository.__
 
-[Analytics Snippet Piwik] / Matomo is a sub-module of [Analytics Snippet] for [Omeka S]
+[Analytics Snippet Matomo] (Piwik) is a sub-module of [Analytics Snippet] for [Omeka S]
 that allows to track the not only the public and/or admin pages, but json (in
 particular for the Omeka S Api) and XML.
 
@@ -15,12 +15,27 @@ Note: XML from the module [OAI-PMH Repository] is not supported yet.
 Installation
 ------------
 
-Install [Analytics Snippet] first.
+See general end user documentation for [installing a module].
 
-Then, uncompress files and rename module folder `AnalyticsSnippetPiwik`. Then
-install it like any other Omeka module and follow the config instructions.
+This module requires the modules [Analytics Snippet] and [Common], that should
+be installed first.
 
-See general end user documentation for [Installing a module].
+The module uses an external library, so use the release zip to install it, or
+use and init the source.
+
+* From the zip
+
+Download the last release [AnalyticsSnippetPiwik.zip] from the list of releases
+(the master does not contain the dependency), and uncompress it in the `modules` directory.
+
+* From the source and for development
+
+If the module was installed from the source, rename the name of the folder of
+the module to `AnalyticsSnippetPiwik`, go to the root module, and run:
+
+```sh
+composer install --no-dev
+```
 
 
 Warning
@@ -76,15 +91,17 @@ license.
 Copyright
 ---------
 
-* Copyright Daniel Berthereau, 2017-2023 (see [Daniel-KM] on GitLab)
+* Copyright Daniel Berthereau, 2017-2025 (see [Daniel-KM] on GitLab)
 
 
-[Analytics Snippet Piwik]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
+[Analytics Snippet Matomo]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik
 [Analytics Snippet]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippet
 [OAI-PMH Repository]: https://github.com/biblibre/omeka-s-module-OaiPmhRepository
 [Omeka S]: https://omeka.org/s
 [Installing a module]: https://omeka.org/s/docs/user-manual/modules/#installing-modules
+[Common]: https://gitlab.com/Daniel-KM/Omeka-S-module-Common
 [module issues]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik/-/issues
+[AnalyticsSnippetPiwik.zip]: https://gitlab.com/Daniel-KM/Omeka-S-module-AnalyticsSnippetPiwik/-/releases
 [CeCILL v2.1]: https://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
 [GNU/GPL]: https://www.gnu.org/licenses/gpl-3.0.html
 [FSF]: https://www.fsf.org
