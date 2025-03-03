@@ -55,7 +55,7 @@ class Matomo extends AbstractTracker
         // $matomoTracker->setResolution(1600, 1400);
 
         // Sends Tracker request via http
-        $matomoTracker->doTrackPageView($type);
+        @$matomoTracker->doTrackPageView($type);
 
         // Tracks an event
         // $matomoTracker->doTrackEvent($category, $action, $name, $value);
