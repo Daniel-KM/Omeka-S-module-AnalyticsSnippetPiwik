@@ -18,7 +18,9 @@ if (!trait_exists(\Common\TraitModule::class, false)) {
     }
 }
 
+use Common\Stdlib\PsrMessage;
 use Common\TraitModule;
+use Laminas\View\Renderer\PhpRenderer;
 use Omeka\Module\AbstractModule;
 
 /**
@@ -35,6 +37,20 @@ class Module extends AbstractModule
     use TraitModule;
 
     const NAMESPACE = __NAMESPACE__;
+
+    public function getConfigForm(PhpRenderer $renderer)
+    {
+        $services = $this->getServiceLocator();
+        $settings = $services->get('Omeka\Settings');
+        // Without token, Matomo ignores the ip sent by the server and records
+        // the ip of the server for all the visits.
+        if (!$settings->get('analyticssnippetpiwik_token_auth')) {
+            $services->get('ControllerPluginManager')->get('messenger')->addWarning(new PsrMessage(
+                'No token is set: Matomo ignores the ip of the visitors sent by the server and records the ip of the server for all the visits tracked server side (api, xml, etc.). Set a token with at least the permission "Admin" on the site in Matomo.' // @translate
+            ));
+        }
+        return $this->getConfigFormAuto($renderer);
+    }
 
     protected function preInstall(): void
     {
