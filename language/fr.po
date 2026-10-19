@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 00:00+0000\n"
-"PO-Revision-Date: 2026-07-13 00:00+0000\n"
+"POT-Creation-Date: 2026-10-19 00:00+0000\n"
+"PO-Revision-Date: 2026-10-19 00:00+0000\n"
 "Last-Translator: Daniel Berthereau <Daniel.fr@Berthereau.net>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -18,10 +18,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.6\n"
 
-#: Module.php:47
+#: data/scripts/upgrade.php:24 data/scripts/upgrade.php:33 Module.php:76
+#: Module.php:86
 #, php-format
 msgid "The module %1$s should be upgraded to version %2$s or later."
 msgstr "Le module %1$s doit être mis à niveau à la version %2$s ou supérieure."
+
+#: data/scripts/upgrade.php:28 data/scripts/upgrade.php:37
+msgid "Missing requirement. Unable to upgrade."
+msgstr "Pré-requis absent. Impossible de mettre à jour."
+
+#: data/scripts/upgrade.php:42
+msgid ""
+"The params of Matomo (tracker url, site id and token) were moved from the "
+"main settings to the config of the module."
+msgstr ""
+"Les paramètres de Matomo (url du tracker, id du site et jeton) ont été "
+"déplacés des paramètres généraux vers la configuration du module."
+
+#: data/scripts/upgrade.php:49
+msgid ""
+"The ip of the visitors sent to Matomo is now resolved behind the trusted "
+"reverse proxies set in the main settings (module Analytics Snippet), else "
+"Matomo receives the ip of the proxy for all visitors. A level of privacy can "
+"be applied too. The ip is recorded by Matomo only with a token."
+msgstr ""
+"L’ip des visiteurs envoyée à Matomo est désormais résolue derrière les "
+"proxys inverses de confiance définis dans les paramètres généraux (module "
+"Analytics Snippet), sinon Matomo reçoit l’ip du proxy pour tous les "
+"visiteurs. Un niveau de confidentialité peut aussi être appliqué. L’ip n’est "
+"enregistrée par Matomo qu’avec un jeton."
+
+#: data/scripts/upgrade.php:56 Module.php:62
+msgid ""
+"No token is set: Matomo ignores the ip of the visitors sent by the server "
+"and records the ip of the server for all the visits tracked server side "
+"(api, xml, etc.). Set a token with at least the permission \"Admin\" on the "
+"site in Matomo."
+msgstr ""
+"Aucun jeton n’est défini : Matomo ignore l’ip des visiteurs envoyée par le "
+"serveur et enregistre l’ip du serveur pour toutes les visites suivies côté "
+"serveur (api, xml, etc.). Définissez un jeton ayant au moins la permission "
+"« Admin » sur le site dans Matomo."
 
 #: src/Form/ConfigForm.php:18
 msgid "Matomo tracker api url"

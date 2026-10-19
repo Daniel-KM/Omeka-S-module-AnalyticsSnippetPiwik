@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 00:00+0000\n"
+"POT-Creation-Date: 2026-10-19 00:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Module.php:47
+#: data/scripts/upgrade.php:24 data/scripts/upgrade.php:33 Module.php:76
+#: Module.php:86
 #, php-format
 msgid "The module %1$s should be upgraded to version %2$s or later."
+msgstr ""
+
+#: data/scripts/upgrade.php:28 data/scripts/upgrade.php:37
+msgid "Missing requirement. Unable to upgrade."
+msgstr ""
+
+#: data/scripts/upgrade.php:42
+msgid ""
+"The params of Matomo (tracker url, site id and token) were moved from the "
+"main settings to the config of the module."
+msgstr ""
+
+#: data/scripts/upgrade.php:49
+msgid ""
+"The ip of the visitors sent to Matomo is now resolved behind the trusted "
+"reverse proxies set in the main settings (module Analytics Snippet), else "
+"Matomo receives the ip of the proxy for all visitors. A level of privacy can "
+"be applied too. The ip is recorded by Matomo only with a token."
+msgstr ""
+
+#: data/scripts/upgrade.php:56 Module.php:62
+msgid ""
+"No token is set: Matomo ignores the ip of the visitors sent by the server "
+"and records the ip of the server for all the visits tracked server side "
+"(api, xml, etc.). Set a token with at least the permission \"Admin\" on the "
+"site in Matomo."
 msgstr ""
 
 #: src/Form/ConfigForm.php:18
