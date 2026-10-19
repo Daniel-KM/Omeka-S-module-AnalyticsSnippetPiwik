@@ -47,6 +47,22 @@ vendor/bin/phpunit -c modules/AnalyticsSnippetPiwik/phpunit.xml --testdox
 ```
 
 
+Usage
+-----
+
+Fill the params in the config of the module: url of the Matomo tracker api, site
+id and token.
+
+The token is required to record the ip of the visitors: without it, Matomo
+ignores the ip sent by the server and records the ip of the server for all the
+visits tracked server side (api, xml, etc.). Use a token with at least the
+permission "Admin" on the site in Matomo. The token is stored encrypted when a
+secret key is set (see module [Common]).
+
+The ip sent to Matomo is resolved behind the trusted reverse proxies and the
+level of privacy set in the main settings of the module [Analytics Snippet].
+
+
 Warning
 -------
 
