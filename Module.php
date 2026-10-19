@@ -78,5 +78,15 @@ class Module extends AbstractModule
             );
             throw new \Omeka\Module\Exception\ModuleCannotInstallException((string) $message);
         }
+
+        // The ip sent to Matomo is resolved by the module Analytics Snippet,
+        // with its trusted proxies and its level of privacy.
+        if (!$this->checkModuleActiveVersion('AnalyticsSnippet', '3.4.7')) {
+            $message = new \Omeka\Stdlib\Message(
+                $translator->translate('The module %1$s should be upgraded to version %2$s or later.'), // @translate
+                'Analytics Snippet', '3.4.7'
+            );
+            throw new \Omeka\Module\Exception\ModuleCannotInstallException((string) $message);
+        }
     }
 }
